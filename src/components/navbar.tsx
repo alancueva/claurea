@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="relative flex h-16 items-center justify-center sm:justify-between">
           {/* Logo for mobile*/}
           <div className="flex flex-1 justify-center sm:hidden">
-            <a className="rounded-md px-3 py-2 flex items-center" href="#">
+            <a className="rounded-md px-3 py-2 flex items-center" href="/">
               <Image
                 src="/claurea-1-11.png"
                 className="h-14 w-auto"
@@ -96,7 +96,7 @@ export default function Navbar() {
 
                 
                 <Link
-                  href="/"
+                  href="/pages/acerca"
                   className=" rounded-md px-3 py-2 text-sm font-medium text-black hover:text-green-500 flex items-center"
                 >
                   Acerca de Claurea
@@ -117,7 +117,7 @@ export default function Navbar() {
                 Productos
               </Link>
               <Link
-                href="/"
+                href="/pages/acerca"
                 className=" rounded-md px-3 py-2 text-sm font-medium text-black hover:text-green-500 flex items-center"
               >
                 Acerca de Claurea
