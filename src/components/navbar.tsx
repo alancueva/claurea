@@ -10,18 +10,23 @@ const dmSerifDisplay = DM_Serif_Display({
   weight: ["400"],
 });
 
+/**
+ * Ruta de la imagen del logo de Claurea
+ */
+const rutaImagen = "/claurea-2-13.png";
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="relative bg-white-200/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+    <nav className="relative bg-white-200/10 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
       <div className="relative mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-center sm:justify-between">
           {/* Logo for mobile*/}
           <div className="flex flex-1 justify-center sm:hidden">
             <a className="rounded-md px-3 py-2 flex items-center" href="/">
               <Image
-                src="/claurea-1-11.png"
+                src={rutaImagen}
                 className="h-14 w-auto"
                 alt="Claurea Logo"
                 width={500}
@@ -77,7 +82,7 @@ export default function Navbar() {
               <div className="flex items-center space-x-6">
                 <Link
                   href="/pages/products"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-green-500 flex items-center"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-green-900 flex items-center"
                 >
                   Productos
                 </Link>
@@ -86,7 +91,7 @@ export default function Navbar() {
                   href="/"
                 >
                   <Image
-                    src="/claurea-1-11.png"
+                    src={rutaImagen}
                     className="h-14 w-auto"
                     alt="Claurea Logo"
                     width={500}
@@ -97,7 +102,7 @@ export default function Navbar() {
                 
                 <Link
                   href="/pages/acerca"
-                  className=" rounded-md px-3 py-2 text-sm font-medium text-black hover:text-green-500 flex items-center"
+                  className=" rounded-md px-3 py-2 text-sm font-medium text-black hover:text-green-900 flex items-center"
                 >
                   Acerca de Claurea
                 </Link>
@@ -110,15 +115,19 @@ export default function Navbar() {
         {menuOpen && (
           <div className="absolute left-2 right-2 top-16 z-20 sm:hidden">
             <div className="flex flex-col items-start space-y-2 rounded-md bg-white p-4 shadow-lg ring-1 ring-black ring-opacity-5">
+              <Link href="/" className="w-full  rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-green-800 flex items-center">
+                  Inicio
+              </Link>
+              
               <Link
                 href="/pages/products"
-                className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-green-500 flex items-center"
+                className="rounded-md w-full px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-green-800 flex items-center"
               >
                 Productos
               </Link>
               <Link
                 href="/pages/acerca"
-                className=" rounded-md px-3 py-2 text-sm font-medium text-black hover:text-green-500 flex items-center"
+                className=" rounded-md w-full px-3 py-2 text-sm font-medium text-black hover:text-green-800 flex items-center"
               >
                 Acerca de Claurea
               </Link>
