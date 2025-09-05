@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Productos() {
   return (
@@ -67,13 +68,22 @@ export default function Productos() {
               </div>
             </div>
           </div>
-          <img
+          <div className="relative h-150 w-full rounded-lg overflow-hidden shadow-xl ring-1 ring-white/10 ">
+            <Image
+              src="/bal-sa-mo.png"
+              alt="balsamos"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+
+          {/* </div>
+          <Image
             alt="Product screenshot"
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOQpDUWXBax1jEajJ_k4GyjRlxt9zvNT3VCKTnD-oYk5l5Z2sRtoalyy2Om_SPnEHwTgFHuVgdYdy7N-bUcd1_JVbePOh-lo8e3mojTOhyphenhyphenaw-j19x6Iygec4-1whj-_E1a1jwlFj8ploM/s1600/b%C3%A1lsamo+labial+frambuesa1.jpg"
-            width={2432}
-            height={1442}
-            className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-228 md:-ml-4 lg:-ml-0"
-          />
+            src="/bal-sa-mo.png"
+            className="w-3xl h-200 max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-228 md:-ml-4 lg:-ml-0"
+          /> */}
         </div>
 
         {/* Segunda sección que describe productos */}
@@ -127,13 +137,15 @@ export default function Productos() {
               </div>
             </div>
           </div>
-          <img
-            alt="Product screenshot"
-            src="https://i0.wp.com/ainhoabio.pe/wp-content/uploads/2019/06/NaturaLash-x-10-ml-w.jpg?fit=765%2C765&ssl=1"
-            width={2432}
-            height={1442}
-            className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-228 md:-ml-4 lg:-ml-0"
-          />
+          <div className="relative h-150 w-full rounded-lg overflow-hidden shadow-xl ring-1 ring-white/10 ">
+            <Image
+              alt="Product screenshot"
+              src="/serums-p-c.jpg"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
       </div>
     </div>
