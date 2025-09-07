@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import SectionClaurea from "./section-claurea";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <div className="relative min-h-screen w-full max-w-full overflow-hidden">
         {/* Imagen para desktop */}
         <Image
-          src="/pine-watt.jpg"
+          src="/mountains-8540699_1920.jpg"
           alt="Claurea"
           fill
           className="object-cover rounded-b-lg hidden md:block"
@@ -16,7 +16,7 @@ export default function Home() {
         />
         {/* Imagen para móviles */}
         <Image
-          src="/chris-guan.jpg"
+          src="/lake-5612720_1920.jpg"
           alt="Claurea móvil"
           fill
           className="object-cover rounded-b-lg md:hidden"
@@ -24,11 +24,12 @@ export default function Home() {
         />
         {/* Descripción centrada    shadow-lg   bg-white/30 rounded-lg */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="px-8 py-6  text-center max-w-lg">
+          {/* Fondo semitransparente más oscuro en móviles */}
+          <div className="absolute inset-0 bg-black/30 md:bg-black/10 transition-all"></div>
+          <div className="relative px-8 py-6 text-center max-w-lg">
             <h1 className="text-6xl font-bold mb-2 text-white">Claurea</h1>
             <p className="text-lg text-white">
-              Belleza que florece con la pureza de la naturaleza, fresca y
-              auténtica como tú.
+              Belleza que florece con la pureza de la naturaleza, fresca y auténtica como tú.
             </p>
           </div>
         </div>
@@ -129,6 +130,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <SectionClaurea />
     </div>
   );
 }
