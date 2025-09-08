@@ -37,7 +37,7 @@ export default function SectionClaurea() {
             Claurea
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Autentico Cuidado Natural
+            Auténtico Cuidado Natural
           </p>
         </div>
 
