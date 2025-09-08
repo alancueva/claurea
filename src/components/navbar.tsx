@@ -115,19 +115,25 @@ export default function Navbar() {
         {menuOpen && (
           <div className="absolute left-2 right-2 top-16 z-20 sm:hidden">
             <div className="flex flex-col items-start space-y-2 rounded-md bg-white p-4 shadow-lg ring-1 ring-black ring-opacity-5">
-              <Link href="/" className="w-full  rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-green-800 flex items-center">
+              <Link 
+                href="/" 
+                className="w-full  rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-green-800 flex items-center"
+                onClick={() => setMenuOpen(false)}
+              >
                   Inicio
               </Link>
               
               <Link
                 href="/pages/products"
                 className="rounded-md w-full px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-green-800 flex items-center"
+                onClick={() => setMenuOpen(false)}
               >
                 Productos
               </Link>
               <Link
                 href="/pages/acerca"
                 className=" rounded-md w-full px-3 py-2 text-sm font-medium text-black hover:text-green-800 flex items-center"
+                onClick={() => setMenuOpen(false)}
               >
                 Acerca de Claurea
               </Link>
