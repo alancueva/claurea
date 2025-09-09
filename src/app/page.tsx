@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionClaurea from "./section-claurea";
+import RotatingText from "../components/rotating-text";
 
 export default function Home() {
   return (
@@ -22,15 +23,11 @@ export default function Home() {
           className="object-cover rounded-b-lg md:hidden"
           priority
         />
-        {/* Descripción centrada    shadow-lg   bg-white/30 rounded-lg */}
         <div className="absolute inset-0 flex items-center justify-center">
           {/* Fondo semitransparente más oscuro en móviles */}
           <div className="absolute inset-0 bg-black/30 md:bg-black/10 transition-all"></div>
           <div className="relative px-8 py-6 text-center max-w-lg">
-            <h1 className="text-6xl font-bold mb-2 text-white">Claurea</h1>
-            <p className="text-lg text-white">
-              Belleza que florece con la pureza de la naturaleza, fresca y auténtica como tú.
-            </p>
+            <RotatingText />
           </div>
         </div>
       </div>
