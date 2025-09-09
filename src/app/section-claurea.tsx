@@ -29,7 +29,7 @@ export default function SectionClaurea() {
     }
   ];
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section className="py-20 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto">
         {/* Título de la sección */}
         <div className="text-center mb-16">
