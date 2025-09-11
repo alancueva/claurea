@@ -1,8 +1,8 @@
 import Image from "next/image";
-import SectionClaurea from "./section-claurea";
-import RotatingText from "../components/rotating-text";
-import SectionProductos from "../components/section-productos";
-import AboutClaurea from "../components/aboutClaurea";
+import RotatingText from "@/components/rotating-text";
+import SectionProductos from "@/components/sections/section-productos";
+import SectionAboutClaurea from "@/components/sections/section-aboutClaurea";
+import SectionFrase1 from "@/components/sections/section-frase-1";
 
 export default function Home() {
   return (
@@ -33,8 +33,8 @@ export default function Home() {
         </div>
       </div>
       <SectionProductos />
-      <SectionClaurea />
-      <AboutClaurea />
+      <SectionAboutClaurea />
+      <SectionFrase1 />
     </div>
   );
 }

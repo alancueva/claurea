@@ -1,6 +1,6 @@
 import Image from "next/image";
-import SectionFrase from "../section-frase";
-import SectionImagenFrase from "../section-imagen-frase";
+import SectionFrase2 from "@/components/sections/section-frase-2";
+import SectionImagenFrase from "@/components/sections/section-imagen-frase";
 
 export default function Serums() {
   return (
@@ -124,7 +124,7 @@ export default function Serums() {
           </div>
         </div>
       </section>
-      <SectionFrase />
+      <SectionFrase2 />
       <SectionImagenFrase />
     </div>
   );
