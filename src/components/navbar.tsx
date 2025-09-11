@@ -1,33 +1,40 @@
 "use client";
-import { useState } from "react";
-import { DM_Serif_Display } from "next/font/google";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const dmSerifDisplay = DM_Serif_Display({
-  variable: "--font-dm-serif-display",
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
 /**
- * Ruta de la imagen del logo de Claurea
+ * Rutas de las imágenes del logo de Claurea
  */
-const rutaImagen = "/claurea-2-13.png";
+const rutaImagenNormal = "/claurea-2-13.png";
+const rutaImagenSVG = "/claurea-1-11.svg";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  /**
+   * Maneja el evento de scroll para detectar cuando el usuario ha scrollado la página
+   */
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="relative bg-white-200/10 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'} after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10`}>
       <div className="relative mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-center sm:justify-between">
           {/* Logo for mobile*/}
           <div className="flex flex-1 justify-center sm:hidden">
             <a className="rounded-md px-3 py-2 flex items-center" href="/">
               <Image
-                src={rutaImagen}
-                className="h-14 w-auto"
+                src={isScrolled ? rutaImagenNormal : rutaImagenSVG}
+                className={`h-14 w-auto transition-all duration-300 ${!isScrolled ? 'brightness-0 invert' : ''}`}
                 alt="Claurea Logo"
                 width={500}
                 height={500}
@@ -82,17 +89,17 @@ export default function Navbar() {
               <div className="flex items-center space-x-6">
                 <Link
                   href="/pages/products"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-green-900 flex items-center"
+                  className={`rounded-md px-3 py-2 text-sm font-medium ${isScrolled ? 'text-black' : 'text-white'} hover:bg-white/40 hover:text-green-900 hover:scale-105 transition-all duration-200 flex items-center`}
                 >
                   Productos
                 </Link>
                 <Link
-                  className="rounded-md px-3 py-2 flex items-center"
+                  className="rounded-md px-3 py-2 flex items-center hover:scale-110 transition-transform duration-200"
                   href="/"
                 >
                   <Image
-                    src={rutaImagen}
-                    className="h-14 w-auto"
+                    src={isScrolled ? rutaImagenNormal : rutaImagenSVG}
+                    className={`h-14 w-auto transition-all duration-300 ${!isScrolled ? 'brightness-0 invert' : ''}`}
                     alt="Claurea Logo"
                     width={500}
                     height={500}
@@ -102,7 +109,7 @@ export default function Navbar() {
                 
                 <Link
                   href="/pages/acerca"
-                  className=" rounded-md px-3 py-2 text-sm font-medium text-black hover:text-green-900 flex items-center"
+                  className={`rounded-md px-3 py-2 text-sm font-medium ${isScrolled ? 'text-black' : 'text-white'} hover:bg-white/40 hover:text-green-900 hover:scale-105 transition-all duration-200 flex items-center`}
                 >
                   Acerca de Claurea
                 </Link>
@@ -117,7 +124,7 @@ export default function Navbar() {
             <div className="flex flex-col items-start space-y-2 rounded-md bg-white p-4 shadow-lg ring-1 ring-black ring-opacity-5">
               <Link 
                 href="/" 
-                className="w-full  rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-green-800 flex items-center"
+                className="w-full rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/40 hover:text-green-800 hover:scale-105 transition-all duration-200 flex items-center"
                 onClick={() => setMenuOpen(false)}
               >
                   Inicio
@@ -125,14 +132,14 @@ export default function Navbar() {
               
               <Link
                 href="/pages/products"
-                className="rounded-md w-full px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-green-800 flex items-center"
+                className="rounded-md w-full px-3 py-2 text-sm font-medium text-black hover:bg-white/40 hover:text-green-800 hover:scale-105 transition-all duration-200 flex items-center"
                 onClick={() => setMenuOpen(false)}
               >
                 Productos
               </Link>
               <Link
                 href="/pages/acerca"
-                className=" rounded-md w-full px-3 py-2 text-sm font-medium text-black hover:text-green-800 flex items-center"
+                className="rounded-md w-full px-3 py-2 text-sm font-medium text-black hover:bg-white/40 hover:text-green-800 hover:scale-105 transition-all duration-200 flex items-center"
                 onClick={() => setMenuOpen(false)}
               >
                 Acerca de Claurea
