@@ -19,11 +19,13 @@ export default function about() {
               </h2>
               <div className="space-y-6 text-gray-600 leading-relaxed text-justify">
                 <p>
-                Claurea nació en diciembre de 2024 con una idea clara: cuidar tu piel de forma natural y sin complicaciones. Empezamos con un bálsamo para labios y un sérum para pestañas y cejas, pensados para quienes quieren verse bien sin esfuerzo. Sin químicos raros, sin reglas. 
+                Claurea nació de una pasión personal que tomó forma en enero de 2023, cuando me propuse crear un bálsamo labial que fuera más que un producto: algo sencillo, puro y confiable. Con mis conocimientos en Química, formulé una mezcla equilibrada de ingredientes naturales que hidratan y protegen los labios a profundidad, sin químicos raros ni complicaciones. Ese bálsamo fue el primer paso de un sueño: ofrecer cuidado facial que se sienta como una extensión de tu piel, no como una máscara.
                 </p>
                 <p>
-
-                Es cuidado fácil, para hombres y mujeres, que te hace sentir como tú, pero con un toque especial. Claurea no vende promesas, sino productos que funcionan y te hacen sentir cómodo en tu propia piel.
+                En diciembre de 2024, ese sueño creció y se convirtió en Claurea, una marca con una idea clara: belleza natural, consciencia sostenible. Al bálsamo se sumó un sérum fortalecedor para pestañas y cejas, creado con aceites naturales para nutrir, revitalizar y realzar la mirada de forma práctica y vegana. Cada gota está pensada para quienes quieren verse bien sin esfuerzo, con productos que funcionan y respetan tanto tu piel como el planeta.
+                </p>
+                <p>
+                Claurea no es solo para mujeres o solo para hombres; es para todos los que buscan cuidado real, sin reglas ni promesas vacías. Cada fórmula lleva detrás una intención consciente: usar lo mejor de la naturaleza, con empaques que cuidan el medio ambiente y un enfoque que dice "sé tú, pero con un toque especial". Desde aquel primer bálsamo hasta el sérum de hoy, Claurea es un compromiso con la autenticidad – porque tu piel merece sentirse viva, cómoda y, sobre todo, tuya.
                 </p>
               </div>
             </div>
