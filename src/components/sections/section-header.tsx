@@ -37,7 +37,7 @@ export default function SectionHeader({
 
   return (
     <div
-      className="relative w-full h-80 flex items-center justify-center text-center px-4"
+      className="relative w-full h-100 flex items-center justify-center text-center px-4"
       style={{
         backgroundImage: `url('${imagen}')`,
         backgroundSize: 'cover',
