@@ -1,23 +1,15 @@
+
+import SectionHeader from "@/components/sections/section-header";
+
 export default function about() {
   return (
     <div className="min-h-screen bg-white">
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gray-100"></div>
-        <div className="relative max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8">
-          <div className="text-center">
-            {/* <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-8">
-                <img src="/claurea-1-11.svg" alt="Claurea Logo" className="w-16 h-16" style={{ filter: 'invert(34%) sepia(77%) saturate(1042%) hue-rotate(74deg) brightness(92%) contrast(92%)' }} />
-            </div> */}
-            <h1 className="text-4xl sm:text-5xl font-light text-gray-900 mb-6">
-            Acerca de Claurea
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Piel que respira, vida que florece – Claurea, tu naturaleza sin filtros.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      <SectionHeader
+        imagen="https://plus.unsplash.com/premium_photo-1755025099451-a66aa4051332?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyOXw2c01WalRMU2tlUXx8ZW58MHx8fHx8"
+        titulo="Acerca de Claurea"
+        descripcion="Piel que respira, vida que florece – Claurea, tu naturaleza sin filtros."
+      />
+     
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid ms:grid-cols-6 gap-16 items-center">
