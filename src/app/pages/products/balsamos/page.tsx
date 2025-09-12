@@ -1,11 +1,13 @@
 import Image from "next/image";
 import SectionFrase2 from "@/components/sections/section-frase-2";
 import SectionImagenFrase from "@/components/sections/section-imagen-frase";
+import SectionColorDegrade from "@/components/sections/section-color-degrade";
 
 export default function Balsamos() {
   return (
     <div>
-      <section className="py-16 px-4 max-w-7xl mx-auto">
+      <SectionColorDegrade />
+      <section className="py-18 px-4 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-4">
             <div className="relative h-100 w-full rounded-lg overflow-hidden">
