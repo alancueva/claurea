@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import SectionHeader from "@/components/sections/section-header";
+import ButtonGreen from "@/components/button/button-green";
 
 export default function Productos() {
   return (
@@ -57,9 +58,7 @@ export default function Productos() {
 
                   <div>
                     <Link href="/pages/products/balsamos">
-                      <button className="bg-transparent hover:bg-green-600 text-green-800 font-semibold hover:text-white py-2 px-4 border border-green-800 hover:border-transparent rounded">
-                        ver más
-                      </button>
+                      <ButtonGreen> Más información</ButtonGreen>
                     </Link>
                   </div>
                 </div>
@@ -67,20 +66,13 @@ export default function Productos() {
             </div>
             <div className="relative h-150 w-full rounded-lg overflow-hidden shadow-xl ring-1 ring-white/10 ">
               <Image
-                src="/bal-sa-mo.png"
+                src="/labios-lip-care.png"
                 alt="balsamos"
                 fill
                 className="object-cover"
                 priority
               />
             </div>
-
-            {/* </div>
-          <Image
-            alt="Product screenshot"
-            src="/bal-sa-mo.png"
-            className="w-3xl h-200 max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-228 md:-ml-4 lg:-ml-0"
-          /> */}
           </div>
 
           {/* Segunda sección que describe productos */}
@@ -126,9 +118,7 @@ export default function Productos() {
 
                   <div>
                     <Link href="/pages/products/serums">
-                      <button className="bg-transparent hover:bg-green-600 text-green-800 font-semibold hover:text-white py-2 px-4 border border-green-800 hover:border-transparent rounded">
-                        ver más
-                      </button>
+                      <ButtonGreen> Más información</ButtonGreen>
                     </Link>
                   </div>
                 </div>
