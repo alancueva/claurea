@@ -105,7 +105,8 @@ export default function Balsamos() {
               </h3>
               <div className="space-y-3 mb-8">
                 <div className="flex items-center text-gray-800">
-                  <span>Uso externo únicamente. Mantener en un lugar fresco, seco y protegido de la luz solar.</span>
+                  <div className="w-2 h-2 bg-black rounded-full mr-3"></div>
+                  <span>Uso externo únicamente. Mantener en un lugar fresco, seco y protegido de la luz solar.</span>
                 </div>
                 </div>
             </div>
