@@ -27,7 +27,7 @@ export default function SerumsCapilar() {
                                 Sérum Reparador Capilar
                             </h2>
                             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                                El Sérum Capilar Reparador es un tratamiento natural que actúa directamente en la raíz del cabello.
+                                El Sérum Reparador Capilar es un tratamiento natural que actúa directamente en la raíz del cabello.
                                 Su fórmula nutritiva fortalece los folículos, estimula el crecimiento y mejora la salud del cuero
                                 cabelludo. Con el uso constante, ayuda a reducir la caída, aportar brillo y dar mayor vitalidad
                                 al cabello, logrando una melena más fuerte y saludable de manera natural.

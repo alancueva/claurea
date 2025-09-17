@@ -24,7 +24,7 @@ export default function SectionProductos() {
     },
     {
       id: 3,
-      titulo: "Sérum Capilar",
+      titulo: "Sérum Reparador Capilar",
       descripcion: "El Sérum es un tratamiento natural que actúa directamente en la raíz del cabello. Su fórmula nutritiva fortalece los folículos, estimula el crecimiento y mejora la salud del cuero cabelludo.",
       imagen: "/cuero-cabelludo.jpg",
       link: "/pages/products/serumsCapilar",

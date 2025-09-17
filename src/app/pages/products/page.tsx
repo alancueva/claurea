@@ -81,7 +81,7 @@ export default function Productos() {
               <div className="lg:max-w-lg">
                 {/* <h2 className="text-base/7 font-semibold text-gray-400">Deploy faster</h2> */}
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-                  Serums
+                  Serums Pestañas y Cejas
                 </p>
                 <p className="mt-6 text-lg/8 text-gray-900">
                   Nuestro sérum está elaborado con una mezcla de aceites naturales
@@ -128,6 +128,60 @@ export default function Productos() {
               <Image
                 alt="Product screenshot"
                 src="/serums-p-c.jpg"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+
+
+          {/* tercera sección que describe productos */}
+          <div className="mt-8 mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div className="lg:pt-4 lg:pr-8">
+              <div className="lg:max-w-lg">
+                {/* <h2 className="text-base/7 font-semibold text-gray-400">Deploy faster</h2> */}
+                <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+                  Serums Reparador Capilar
+                </p>
+                <p className="mt-6 text-lg/8 text-gray-900">
+                  Un tratamiento natural diseñado para aplicarse en la raíz del cabello, donde nutre e hidrata directamente el folículo capilar. Su acción ayuda a fortalecer el crecimiento, mejorar la salud del cuero cabelludo y prevenir la caída, logrando un cabello más resistente, brillante y con vitalidad.
+                </p>
+
+                <div className="mt-6 space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Ingredientes:</h4>
+                    <p className="text-gray-700">
+                      Aceite de ricino, Aceite de jojoba,  aceite de coco, vitamina E. 
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Uso:</h4>
+                    <p className="text-gray-700">
+                      Con el gotero, aplicar de 3 a 5 gotas directamente en la raíz del cabello
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Presentación:</h4>
+                    <p className="text-gray-700">
+                      20 ml en envase.
+                    </p>
+                  </div>
+
+                  <div>
+                    <Link href="/pages/products/serumsCapilar">
+                      <ButtonGreen> Más información</ButtonGreen>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative h-150 w-full rounded-lg overflow-hidden shadow-xl ring-1 ring-white/10 ">
+              <Image
+                alt="Product screenshot"
+                src="/cuero-cabelludo.jpg"
                 fill
                 className="object-cover"
                 priority
