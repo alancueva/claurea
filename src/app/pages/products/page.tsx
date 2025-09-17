@@ -117,7 +117,7 @@ export default function Productos() {
                   </div>
 
                   <div>
-                    <Link href="/pages/products/serums">
+                    <Link href="/pages/products/serumsPestaniasCejas">
                       <ButtonGreen> Más información</ButtonGreen>
                     </Link>
                   </div>
