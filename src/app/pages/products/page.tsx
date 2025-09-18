@@ -81,7 +81,7 @@ export default function Productos() {
               <div className="lg:max-w-lg">
                 {/* <h2 className="text-base/7 font-semibold text-gray-400">Deploy faster</h2> */}
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-                  Serums Pestañas y Cejas
+                  Serum Pestañas y Cejas
                 </p>
                 <p className="mt-6 text-lg/8 text-gray-900">
                   Nuestro sérum está elaborado con una mezcla de aceites naturales
@@ -142,7 +142,7 @@ export default function Productos() {
               <div className="lg:max-w-lg">
                 {/* <h2 className="text-base/7 font-semibold text-gray-400">Deploy faster</h2> */}
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-                  Serums Reparador Capilar
+                  Serum Reparador Capilar
                 </p>
                 <p className="mt-6 text-lg/8 text-gray-900">
                   Un tratamiento natural diseñado para aplicarse en la raíz del cabello, donde nutre e hidrata directamente el folículo capilar. Su acción ayuda a fortalecer el crecimiento, mejorar la salud del cuero cabelludo y prevenir la caída, logrando un cabello más resistente, brillante y con vitalidad.
