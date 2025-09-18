@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import { DM_Serif_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
       >
         <Navbar />
         {children}
+        <Analytics/>
         <Footer />
       </body>
     </html>
