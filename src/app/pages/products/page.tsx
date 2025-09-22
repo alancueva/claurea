@@ -152,7 +152,7 @@ export default function Productos() {
                   <div>
                     <h4 className="font-semibold text-gray-900">Ingredientes:</h4>
                     <p className="text-gray-700">
-                      Aceite de ricino, Aceite de jojoba,  aceite de coco, vitamina E. 
+                      Aceite de ricino, Aceite de jojoba, esencia de romero, vitamina E. 
                     </p>
                   </div>
 

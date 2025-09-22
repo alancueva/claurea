@@ -36,7 +36,7 @@ export default function SerumsCapilar() {
                                 Contiene:
                             </h3>
                             <p className="text-gray-600 leading-relaxed mb-6">
-                                Aceite de ricino, aceite de jojoba, aceite de coco, vitamina E.
+                                Aceite de ricino, aceite de jojoba, esencia de romero, vitamina E.
                                 Natural, formula vegana, libre de sulfatos y parabenos.
                             </p>
                         </div>
