@@ -1,20 +1,18 @@
 "use client";
-
-import SectionColorDegrade from "@/components/sections/section-color-degrade";
 import { Home, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 export default function NotFound() {
   return (
     <div>
-      <div className="min-h-screen bg-white flex flex-col">
+      <div className="min-h-screen bg-gray-300 flex flex-col">
         {/* Main Content */}
         <main className="flex-1 flex items-center justify-center px-6">
           <div className="max-w-2xl w-full text-center">
-          <SectionColorDegrade />
+          {/* <SectionColorDegrade /> */}
             {/* 404 Number */}
             <div className="mb-8">
-              <h1 className="text-9xl font-light text-gray-200 tracking-tight">
+              <h1 className="text-9xl font-light text-gray-900 tracking-tight">
                 404
               </h1>
             </div>
@@ -40,7 +38,7 @@ export default function NotFound() {
               </Link>
               <button
                 onClick={() => window.history.back()}
-                className="inline-flex items-center gap-2 px-8 py-3 border border-gray-300 text-gray-900 text-sm tracking-wide hover:border-gray-900 transition-colors"
+                className="inline-flex items-center gap-2 px-8 py-3 border border-gray-400 text-gray-900 text-sm tracking-wide hover:border-gray-900 transition-colors"
               >
                 <ArrowLeft size={18} />
                 Página anterior
