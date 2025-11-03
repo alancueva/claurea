@@ -1,13 +1,14 @@
-"use client";
+'use client';
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Icono, IconoSVG } from "@/components/icono";
 
 /**
  * Rutas de las imágenes del logo de Claurea
  */
-const rutaImagenNormal = "/claurea-2-13.png";
-const rutaImagenSVG = "/claurea-1-11.svg";
+// const rutaImagenNormal = "/claurea-2-13.png";
+// const rutaImagenSVG = "/claurea-1-11.svg";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'} after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10`}>
       <div className="relative mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-center sm:justify-between">
-          {/* Logo for mobile*/}
+          {/* 
           <div className="flex flex-1 justify-center sm:hidden">
             <a className="rounded-md px-3 py-2 flex items-center" href="/">
               <Image
@@ -40,6 +41,16 @@ export default function Navbar() {
                 height={500}
               />
             </a>
+          </div> */}
+
+          {/* Logo para mobile */}
+          <div className="flex flex-1 justify-center sm:hidden">
+            <Link href="/" className="rounded-md px-3 py-2 flex items-center">
+              <Icono 
+                className={`h-35 w-auto transition-all duration-300 ${!isScrolled ? "fill-white" : "fill-[#1E3023]"
+                  }`}
+              />
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -97,16 +108,22 @@ export default function Navbar() {
                   className="rounded-md px-3 py-2 flex items-center hover:scale-110 transition-transform duration-200"
                   href="/"
                 >
-                  <Image
+                  {/* <Image
                     src={isScrolled ? rutaImagenNormal : rutaImagenSVG}
                     className={`h-14 w-auto transition-all duration-300 ${!isScrolled ? 'brightness-0 invert' : ''}`}
                     alt="Claurea Logo"
                     width={500}
                     height={500}
+                  /> */}
+                  <Icono 
+                    className={`h-35 w-auto transition-all duration-300 ${
+                      !isScrolled ? "fill-white" : "fill-[#1E3023]"
+                    }`}
                   />
+
                 </Link>
 
-                
+
                 <Link
                   href="/pages/acerca"
                   className={`rounded-md px-3 py-2 text-sm font-medium ${isScrolled ? 'text-black' : 'text-white'} hover:bg-white/40 hover:text-green-900 hover:scale-105 transition-all duration-200 flex items-center`}
@@ -122,14 +139,14 @@ export default function Navbar() {
         {menuOpen && (
           <div className="absolute left-2 right-2 top-16 z-20 sm:hidden">
             <div className="flex flex-col items-start space-y-2 rounded-md bg-white p-4 shadow-lg ring-1 ring-black ring-opacity-5">
-              <Link 
-                href="/" 
+              <Link
+                href="/"
                 className="w-full rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/40 hover:text-green-800 hover:scale-105 transition-all duration-200 flex items-center"
                 onClick={() => setMenuOpen(false)}
               >
-                  Inicio
+                Inicio
               </Link>
-              
+
               <Link
                 href="/pages/products"
                 className="rounded-md w-full px-3 py-2 text-sm font-medium text-black hover:bg-white/40 hover:text-green-800 hover:scale-105 transition-all duration-200 flex items-center"
